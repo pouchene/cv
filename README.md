@@ -1,2 +1,3 @@
-# cv
-Work history
+# pouchene/cv
+
+Build a CV, render with LateX.

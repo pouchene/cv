@@ -1,3 +1,5 @@
-# pouchene/cv
+## CV
 
-Build a CV, render with LateX.
+Built using [TinyTeX](https://yihui.org/tinytex/), facilitated by [Visual Studio Code LaTeX Workshop Extension](https://github.com/James-Yu/LaTeX-Workshop).
+
+Based on a temmplate from [rendercv](https://github.com/sinaatalay/rendercv) (under MIT License).

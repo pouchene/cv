@@ -3,8 +3,8 @@
 % Packages:
 \usepackage[
     ignoreheadfoot, % set margins without considering header and footer
-    top=2 cm, % seperation between body and page edge from the top
-    bottom=2 cm, % seperation between body and page edge from the bottom
+    top=1.5 cm, % seperation between body and page edge from the top
+    bottom=1.5 cm, % seperation between body and page edge from the bottom
     left=2 cm, % seperation between body and page edge from the left
     right=2 cm, % seperation between body and page edge from the right
     footskip=1.0 cm, % seperation between body and footer
@@ -55,7 +55,7 @@
 \makeatletter
 \let\ps@customFooterStyle\ps@plain % Copy the plain style to customFooterStyle
 \patchcmd{\ps@customFooterStyle}{\thepage}{
-    \color{gray}\textit{\small Pierre Ouchene - Page \thepage{} of \pageref*{LastPage}}
+    \color{gray}\textit{\small Pierre Ouchene CV - Page \thepage{} of \pageref*{LastPage}}
 }{}{} % replace number by desired string
 \makeatother
 \pagestyle{customFooterStyle}
@@ -170,7 +170,7 @@
 \begin{document}
     \placelastupdatedtext
     \begin{header}
-        \fontsize{30 pt}{30 pt}
+        \fontsize{25 pt}{25 pt}
         \textbf{Pierre Ouchene}
 
         \vspace{0.3 cm}
@@ -194,17 +194,17 @@
     \vspace{0.3 cm - 0.3 cm}
 
 
-    \section{About}
+    % \section{About}
 
-        \begin{onecolentry}
-            TODO
-        \end{onecolentry}
+    %     \begin{onecolentry}
+    %         Data Scientist at HelloFresh.
+    %     \end{onecolentry}
 
-        \vspace{0.2 cm}
+    %     \vspace{0.2 cm}
 
-        \begin{onecolentry}
-            Also TODO
-        \end{onecolentry}
+    %     \begin{onecolentry}
+    %         Also TODO
+    %     \end{onecolentry}
 
 
     % There are seven different entry types: \textit{BulletEntry}, \textit{TextEntry}, \textit{EducationEntry}, \textit{ExperienceEntry}, \textit{NormalEntry}, \textit{PublicationEntry}, and \textit{OneLineEntry}.
@@ -214,65 +214,157 @@
     \section{Experience}
 
         \begin{twocolentry}{
-        Where
+        Copenhagen, Denmark
 
-        When
+        Jan. 2023 - Present
 
-        How long
+        1 year 6 months
 
-        
         }
-            \textbf{Company}, Position
+            \textbf{HelloFresh, Data Scientist}
             \begin{highlights}
-                \item Point 1
-                \item Point 2
+                \item Forecast demand for Nordic operations (Denmark, Sweden, Norway)
+                \item Automate data processing and analysis for production, procurement and logistics
+                \item \textbf{Key result:} improved forecast accuracy against previous year every quarter
             \end{highlights}
+            Keywords: Data science, Python, Databricks, Spark, Apache Airflow, Docker
         \end{twocolentry}
 
-        \vspace{0.2 cm}
+        \vspace{0.5 cm}
 
         \begin{twocolentry}{
-        Where
+        Kongens Lyngby, Denmark
 
-        When
+        Sep. 2021 - Dec. 2022
 
-        How long
+        1 year 4 months
 
         }
-            \textbf{Company}, Position
+            \textbf{Technical University of Denmark, Research assistant}
             \begin{highlights}
-                \item Point 1
-                \item Point 2
+                \item Developped a behaviour anomaly detection algorithm
+                \item Applied Kalman filtering to distance estimation with low energy sensors
             \end{highlights}
+            Keywords: Python, Spark, Statistics, Mathematics, Discrete time series
+        \end{twocolentry}
+
+        \vspace{0.5 cm}
+
+        \begin{twocolentry}{
+        Copenhagen, Denmark
+
+        Feb. 2022 - Apr. 2022
+
+        3 months
+
+        }
+        \textbf{SaturdaysAI Copenhagen, Volunteering mentor}
+        \begin{highlights}
+            \item Assisted and mentored bootcamp participants
+            \item Hosted a lecture on data standardization and time series modelling 
+        \end{highlights}
+        Keywords: Python, Data processing, Mentoring, Time series analysis
+        \end{twocolentry}
+
+        \vspace{0.5 cm}
+
+        \begin{twocolentry}{
+        Kongens Lyngby, Denmark
+
+        Feb. 2021 - Aug. 2021
+
+        7 months
+
+        }
+        \textbf{Technical University of Denmark, Master's thesis}
+        \begin{highlights}
+                \item Modelled evolution of mosquito population, survival rate and infection risk
+                \item Reconstructed missing data based on weather conditions
+            \end{highlights}
+            Keywords: R, Data modelling, Time series analysis
+        \end{twocolentry}
+
+        \vspace{0.5 cm}
+
+        \begin{twocolentry}{
+        Brignais, France
+
+        Aug. 2019 - Aug. 2021
+
+        2 year 1 month
+
+        }
+        \textbf{IKNOVA, Developer and prototyper}
+        \begin{highlights}
+                \item Designed an industrial knowledge measure model, prototyped in Python
+                \item Implemented as a web application plugin in Kotlin
+        \end{highlights}
+        Keywords: Python, Kotlin, Data processing, Knowledge Lifecycle Management
         \end{twocolentry}
 
 
     
     \section{Education}
     
-        \begin{threecolentry}{
-            \textbf{BS}
-        }{
-            When
-        }{
-            \textbf{Uni}, Degree
-            \begin{highlights}
-                \item \textbf{Coursework:} Software Foundations, Computer Architecture, Algorithms, Artificial Intelligence, Comparison of Learning Algorithms, Computational Theory.
-            \end{highlights}
-        }
-        \end{threecolentry}
+    \begin{twocolentry}{
+        Kongens Lyngby, Denmark
+
+        Sep. 2019 - Aug. 2021
+    }{
+        \textbf{Technical University of Denmark}
+        
+        Master of Science in Mathematical Modelling and Computation
+        \begin{highlights}
+            \item \textbf{Focus areas:} Financial engineering, Operations research, Time series Analysis
+        \end{highlights}
+    }
+    \end{twocolentry}
+
+    \vspace{0.5 cm}
+
+
+    \begin{twocolentry}{
+        Écully, France
+
+        Sep. 2017 - Aug. 2021
+    }{
+        \textbf{École Centrale de Lyon}
+        
+        General engineering degree (eq. Master's Degree)
+        \begin{highlights}
+            \item \textbf{Focus areas:} Statistics, Probability, Econometrics, Functional Analysis 
+        \end{highlights}
+    }
+    \end{twocolentry}
 
 
 
-    \section{Technologies}
+    \section{Technologies and skills}
 
         \begin{onecolentry}
-            \textbf{Languages:} TODO
+            \textbf{Proficient:} Python, SQL, Statistics, Time series Analysis
         \end{onecolentry}
 
         \vspace{0.2 cm}
 
         \begin{onecolentry}
-            \textbf{Software:} TODO
+            \textbf{Familiar:} R, Docker, Spark, Hypothesis testing, Databricks, Airflow
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Novice:} Go, Kotlin, Matlab, Github Automation, LateX
+        \end{onecolentry}
+
+
+    \section{Languages}
+
+        \begin{onecolentry}
+            \textbf{Native:} French
+            \hspace{1 cm}
+            \textbf{Fluent:} English
+            \hspace{1 cm} 
+            \textbf{Beginner:} Danish, Spanish
         \end{onecolentry}
 \end{document}
